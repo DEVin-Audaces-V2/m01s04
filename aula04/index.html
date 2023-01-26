@@ -10,5 +10,63 @@
     <title>DevInTasks</title>
   </head>
 
-  <body></body>
+  <body>
+    <header class="header">
+      <img src="./assets/logo.svg" alt="Logo DevInTask" />
+      <h1 class="title">DevInTasks</h1>
+    </header>
+
+    <main class="main">
+      <!-- Início do formulário -->
+      <section>
+        <form id="form-cadastro" class="form">
+          <h2 class="subtitle">Cadastre suas tarefas</h2>
+
+          <div class="row">
+            <div class="column">
+              <input
+                required
+                id="titulo"
+                class="input"
+                type="text"
+                placeholder="Digite o título da tarefa"
+              />
+
+              <select required class="select" id="prioridade">
+                <option disabled>Selecione a prioridade</option>
+                <option value="0">Alta</option>
+                <option value="1">Média</option>
+                <option value="2">Baixa</option>
+              </select>
+            </div>
+
+            <div class="column">
+              <textarea
+                required
+                id="descricao"
+                placeholder="Digite a descrição da tarefa"
+                rows="5"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button class="button-secondary" type="reset">Limpar</button>
+            <button class="button-primary" type="submit">Enviar</button>
+          </div>
+        </form>
+      </section>
+      <!-- Fim do formulário -->
+
+      <!-- Início da busca -->
+      <section class="search">
+        <input id="input-busca" class="input-search" placeholder="Digite o título da tarefa" />
+
+        <button id="button-search" class="button-search">
+          <img src="./assets/search.svg" alt="Pesquisar" />
+        </button>
+      </section>
+      <!-- Fim da busca -->
+    </main>
+  </body>
 </html>
