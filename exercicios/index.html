@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevInBank</title>
+    <script src="./index.js" async></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo.png" height="50" alt="Logo Banco" />
+
+      <h1>DevInBank</h1>
+    </header>
+
+    <main>
+      <form id="form-cadastro">
+        <div>
+          <label for="nome">Nome:</label>
+          <input required id="nome" type="text" placeholder="Digite o nome" />
+        </div>
+
+        <div>
+          <label for="cpf">CPF:</label>
+          <input required id="cpf" type="text" placeholder="Digite o CPF" />
+        </div>
+
+        <div>
+          <label for="celular">Celular:</label>
+          <input required id="celular" type="text" placeholder="Digite o Celular" />
+        </div>
+
+        <div>
+          <label for="senha">Senha:</label>
+          <input required id="senha" type="password" placeholder="Digite o Senha" />
+        </div>
+
+        <div>
+          <label for="confimacaoSenha">Confirmação da Senha:</label>
+          <input
+            required
+            id="confimacaoSenha"
+            type="password"
+            placeholder="Digite o Confirmação da Senha"
+          />
+        </div>
+
+        <div>
+          <button type="reset">Limpar</button>
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <p>DeviInBank</p>
+    </footer>
+  </body>
+</html>
