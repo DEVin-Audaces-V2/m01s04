@@ -52,6 +52,40 @@
           <button type="submit">Enviar</button>
         </div>
       </form>
+
+      <br /><br />
+
+      <!-- Formulário Operacao -->
+      <form id="form-operacao">
+        <div>
+          <label for="conta">Conta:</label>
+          <input required id="conta" type="number" placeholder="Digite a conta" />
+        </div>
+
+        <div>
+          <label for="operacao">Operação:</label>
+          <select required id="operacao">
+            <option value="saque">Saque</option>
+            <option value="deposito">Depósito</option>
+            <option value="saldo">Consulta saldo</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="valor">Valor:</label>
+          <input required id="valor" type="number" placeholder="Digite o valor" />
+        </div>
+
+        <div>
+          <label for="senhaOperacao">Senha:</label>
+          <input required id="senhaOperacao" type="password" placeholder="Digite a senha" />
+        </div>
+
+        <div>
+          <button type="reset">Limpar</button>
+          <button type="submit">Confirmar</button>
+        </div>
+      </form>
     </main>
 
     <footer>
